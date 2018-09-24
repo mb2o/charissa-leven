@@ -1,0 +1,10 @@
+h1 {
+  margin-bottom: 1em;
+}
+.container {
+  margin-top: 2em;
+}
+.control-label {
+  font-weight: bold;
+  color: cornflowerblue;
+}
