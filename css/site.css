@@ -1,4 +1,5 @@
-h1 {
+.myfont {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   margin-bottom: 1em;
 }
 .container {
@@ -6,5 +7,8 @@ h1 {
 }
 .control-label {
   font-weight: bold;
-  color: cornflowerblue;
+  color: orange;
+}
+.progress {
+  margin-top: 2em;
 }

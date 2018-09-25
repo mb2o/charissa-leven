@@ -1,6 +1,5 @@
 <?php
-
-error_reporting(0);
+session_start();
 
 if (isset($_POST["submit"])) {
     if (1 === 1) {
@@ -16,8 +15,8 @@ include('inc/header.php');
 
 <div class="row">
     <div class="col-md-12 col-md-offset-3">
-        <h1 class="page-header text-center">Levensverwachting</h1>
-            <form role="form" method="post" action="questionnaire.php" novalidate>
+        <h2 class="text-center myfont">Vragenlijst</h2>
+            <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" novalidate>
                 
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -82,4 +81,8 @@ include('inc/header.php');
     </div>
 </div>
 
-<?php include('footer.php'); ?>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<?php include('inc/footer.php'); ?>

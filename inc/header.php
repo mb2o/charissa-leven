@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Levensverwachtingcalculator">
     <meta name="author" content="C. Boomaars">
-    <title>Levensverwachting</title>
-    <link rel="stylesheet" 
+    <title>Levensverwachting Calculator</title>
+    <!-- <link rel="stylesheet" 
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
-          crossorigin="anonymous">
+          crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/superhero.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Yanone+Kaffeesatz" rel="stylesheet">
     <link rel="stylesheet" href="css/site.css">
   </head>
-  <body>
+  <body>  
+    <!-- Navigatie -->
+    <?php include('inc/nav.php'); ?>
+
   	<div class="container">
