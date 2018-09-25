@@ -8,7 +8,7 @@ include('inc/header.php');
   <p class="lead">Bereken snel en eenvoudig uw resterende aantal jaren op deze aarde.</p>
   <hr class="my-4">
   <p>Bij de berekening worden algoritmes gebruikt die niet wetenschappelijk onderbouwd zijn. Deze site is dan ook puur bedoeld voor educatieve doeleinden. Hier kunnen geen rechten aan ontleend worden.</p>
-  <a class="btn btn-warning btn-lg" href="start.php" role="button">Bereken Uw Levensverwachting</a>
+  <a class="btn btn-info btn-lg" href="start.php" role="button">Bereken Uw Levensverwachting</a>
 </div>
 
 <?php include('inc/footer.php'); ?>
