@@ -4,7 +4,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item"><!-- Eventueel "active" class gebruiken -->
         <a class="nav-link" href="index.php">Home</a>
       </li>
@@ -12,5 +12,6 @@
         <a class="nav-link" href="start.php">Bereken</a>
       </li>
     </ul>
+    <a href="theme_switcher.php" class="btn btn-outline-warning">Thema</a>
   </div>
 </nav>

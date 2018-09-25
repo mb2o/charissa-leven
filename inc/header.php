@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,13 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Levensverwachtingcalculator">
     <meta name="author" content="C. Boomaars">
+
     <title>Levensverwachting Calculator</title>
-    <!-- <link rel="stylesheet" 
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
-          crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="css/superhero.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Yanone+Kaffeesatz" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz">
+    <?php
+    $stylesArr = array('flatly', 'journal', 'sketchy', 'slate', 'superhero');
+    if (isset($_COOKIE['theme']) && in_array($_COOKIE['theme'], $stylesArr)) {
+      $style = 'css/' . $_COOKIE['theme'] . '.min.css';
+      $_SESSION['theme'] = $_COOKIE['theme'];
+    } else {
+      $style = 'css/sketchy.min.css';
+      $_SESSION['theme'] = 'sketchy';
+    }
+    ?>
+    <link rel="stylesheet" href="<?php echo $style; ?>">
     <link rel="stylesheet" href="css/site.css">
   </head>
   <body>  
