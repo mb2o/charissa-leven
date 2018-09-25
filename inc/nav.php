@@ -12,6 +12,6 @@
         <a class="nav-link" href="start.php">Bereken</a>
       </li>
     </ul>
-    <a href="theme_switcher.php" class="btn btn-outline-warning">Thema</a>
+    <a href="theme_switcher.php" class="btn btn-outline-success">Thema</a>
   </div>
 </nav>
