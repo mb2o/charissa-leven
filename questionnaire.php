@@ -68,7 +68,7 @@ include('inc/header.php');
 
                 <div class="form-group">
                     <div class="col-sm-offset-2">
-                        <input id="submit" name="submit" type="submit" value="Toon Resultaat" class="btn btn-primary">
+                        <input id="submit" name="submit" type="submit" value="Toon Resultaat" class="btn btn-success">
                     </div>
                 </div>
 
