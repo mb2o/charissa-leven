@@ -33,29 +33,8 @@ include('inc/header.php');
 		<h2 class="text-center myfont">Algemeen</h2>
 		<form class="form-horizontal" role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" novalidate>
 
-			<!-- <div class="form-group">
-				<label class="control-label">Leeftijd</label>
-				<div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="age" id="under18" value="under18"
-						<?php //echo ($_POST['age'] == "under18" ? 'checked' : ''); ?>>
-						<label class="form-check-label" for="under18">
-							Ik ben jonger dan 18 jaar
-						</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="age" id="over18" value="over18"
-						<?php //echo ($_POST['age'] == "over18" ? 'checked' : ''); ?>>
-						<label class="form-check-label" for="over18">
-							Ik ben 18 jaar of ouder
-						</label>
-					</div>
-				</div>
-				<?php //echo "<p class='text-danger'>$errAge</p>"; ?>
-			</div> -->
-
 			<div class="form-group">
-				<label class="control-label">Leeftijd</label>
+				<label class="control-label text-warning">Leeftijd</label>
 				<div class="custom-control custom-radio">
 					<input type="radio" id="under18" name="age" value="under18" class="custom-control-input" <?php echo ($_POST['age'] == "under18" ? 'checked' : ''); ?>>
 					<label class="custom-control-label" for="under18">Ik ben jonger dan 18 jaar</label>
@@ -67,36 +46,8 @@ include('inc/header.php');
 				<?php echo "<p class='text-danger'>$errAge</p>"; ?>
 			</div>
 
-			<!-- <div class="form-group">
-				<label class="control-label">Selecteer wat van toepassing is op jouw situatie</label>
-				<div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="situation" id="school" value="school"
-						<?php //echo ($_POST['situation'] == "school" ? 'checked' : ''); ?>>
-						<label class="form-check-label" for="school">
-							Ik ga full-time naar school
-						</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="situation" id="job" value="job"
-						<?php echo ($_POST['situation'] == "job" ? 'checked' : ''); ?>>
-						<label class="form-check-label" for="job">
-							Ik heb een full-time baan
-						</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="situation" id="jobschool" value="jobschool"
-						<?php //echo ($_POST['situation'] == "jobschool" ? 'checked' : ''); ?>>
-						<label class="form-check-label" for="jobschool">
-							Ik werk en ga naar school
-						</label>
-					</div>
-				</div>
-				<?php //echo "<p class='text-danger'>$errSituation</p>"; ?>
-			</div> -->
-			
 			<div class="form-group">
-				<label class="control-label">Selecteer wat van toepassing is op jouw situatie</label>
+				<label class="control-label text-warning">Selecteer wat van toepassing is op jouw situatie</label>
 				<div class="custom-control custom-radio">
 					<input type="radio" id="school" name="situation" value="school" class="custom-control-input" <?php echo ($_POST['situation'] == "school" ? 'checked' : ''); ?>>
 					<label class="custom-control-label" for="school">Ik ga full-time naar school</label>
@@ -113,7 +64,7 @@ include('inc/header.php');
 			</div>
 
 			<div class="form-group">
-				<label for="human" class="control-label">2 + 3 = ?</label>
+				<label for="human" class="control-label text-warning">2 + 3 = ?</label>
 				<div class="">
 					<input type="text" class="form-control" id="human" name="human">
 					<?php echo "<p class='text-danger'>$errHuman</p>"; ?>
