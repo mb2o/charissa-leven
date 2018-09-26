@@ -15,7 +15,7 @@ include('inc/header.php');
 <div class="row">
     <div class="col-md-12 col-md-offset-3">
         <h2 class="text-center myfont">Vragenlijst</h2>
-            <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" novalidate>
+            <form role="form" method="post" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]); ?>" novalidate>
                 
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -67,7 +67,8 @@ include('inc/header.php');
 
                 <div class="form-group">
                     <div class="col-sm-offset-2">
-                        <input id="submit" name="submit" type="submit" value="Toon Resultaat" class="btn btn-success">
+                        <input id="submit" name="submit" type="submit" value="Toon Resultaat" 
+                               class="btn btn-success">
                     </div>
                 </div>
 
@@ -81,7 +82,8 @@ include('inc/header.php');
 </div>
 
 <div class="progress">
-  <div class="progress-bar" role="progressbar" style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar" role="progressbar" style="width: 67%" 
+       aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 
 <?php include('inc/footer.php'); ?>
